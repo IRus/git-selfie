@@ -8,6 +8,20 @@
 
 ## Setup
 
+Install fswebcam package (in case of debian-like):
+
+```bash
+apt-get install fswebcam
+```
+
+Check your git version:
+
+```bash
+git --version
+```
+
+Here [ppa](https://launchpad.net/~git-core/+archive/ubuntu/ppa) for latest git (Ubuntu).
+
 Clone this repository as `~/.git_hooks`:
 
 ```bash
@@ -38,6 +52,7 @@ So you have two ways:
 
 1. Copy commit-hook in every repository.
 2. Assign hookPath globally and overwrite it in specific repos:
+
     ```bash
     git config core.hooksPath ./.git/hooks/
     ```
