@@ -8,4 +8,4 @@ fswebcam --resolution "1280x720" \
          --no-banner \
         --quiet \
          --png 0 \
-         "${FOLDER}/$(date +"%s").png"
+         "${FOLDER}/$(date +"%s")-$(git rev-parse HEAD).png"
